@@ -26,19 +26,21 @@
 
     <main>
       <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
-        <section role="region" aria-labelledby="student-info"><h2 id="student-info">student-info</h2>
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Info</h2>
           <div class="info">
-            <label for="nome">Nome</label>
-            <input id="nome" type="text" />
+            <label for="student-name">Name:</label>
+            <input id="student-name" type="text" name="name" placeholder="seu nome"/>
           </div>
           <div class="info">
-            <label for="email">E-mail</label>
-            <input id="email" />
+            <label for="student-email">Email:</label>
+            <input id="student-email" type="email" name="email"/>
           </div>
           <div class="info">
-            <label for="data de nascimento">Data de nascimento</label>
-            <input id="data de nascimento" />
-          </div></section>
+            <label for="birth-date">D.O.B.:</label>
+            <input id="birth-date" type="date" name="birth-date"/>
+          </div>
+        </section>
         <section role="region" aria-labelledby="html-questions"><h2 id="html-questions">html-questions</h2></section>
         <section role="region" aria-labelledby="css-questions"><h2 id="css-questions">css-questions</h2></section>
       </form>
